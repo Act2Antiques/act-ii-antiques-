@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" fill="none">
+  <!-- Envelope back/body with hand-drawn style -->
+  <path d="M12 95 C8 95, 5 98, 5 102 L5 385 C5 390, 9 394, 14 394 L486 394 C491 394, 495 390, 495 385 L495 102 C495 97, 491 95, 486 95 Z"
+        fill="#faf9f5"
+        stroke="#4a4543"
+        stroke-width="2"
+        stroke-linecap="round"/>
+
+  <!-- Envelope flap (open, folded back) with hand-drawn wobble -->
+  <path d="M8 98 C8 98, 12 95, 15 93 L235 12 C245 6, 255 6, 265 12 L485 93 C488 95, 492 98, 492 98"
+        fill="#f2efde"
+        stroke="#4a4543"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- Inner flap fold line -->
+  <path d="M15 98 L250 195 L485 98"
+        fill="none"
+        stroke="#4a4543"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-dasharray="4 3"
+        opacity="0.4"/>
+
+  <!-- Decorative stamp area -->
+  <rect x="400" y="30" width="55" height="45" rx="2"
+        fill="none"
+        stroke="#4a4543"
+        stroke-width="1.5"
+        stroke-dasharray="3 2"/>
+
+  <!-- Small decorative dog silhouette in stamp -->
+  <ellipse cx="427" cy="52" rx="18" ry="14" fill="#f5d03e" opacity="0.6"/>
+
+  <!-- Decorative lines suggesting address -->
+  <line x1="30" y1="45" x2="120" y2="45" stroke="#4a4543" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+  <line x1="30" y1="58" x2="95" y2="58" stroke="#4a4543" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+  <line x1="30" y1="71" x2="110" y2="71" stroke="#4a4543" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+</svg>

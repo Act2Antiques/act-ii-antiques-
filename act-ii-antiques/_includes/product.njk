@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | Act II Antiques</title>
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/index.html" class="logo">
+        <span class="logo-dog">
+          <img src="/images/dog-body.svg" alt="" class="dog-body">
+          <img src="/images/dog-head.svg" alt="" class="dog-head">
+          <span class="monocle-glint"></span>
+        </span>
+        <span class="logo-text">
+          <span class="logo-title"><em>Act</em> II</span>
+          <span class="logo-subtitle">Antiques</span>
+        </span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="product-page">
+      <div class="product-image">
+        <img src="{{ image }}" alt="{{ title }}">
+      </div>
+      <div class="product-details">
+        <a href="/index.html" class="back-link">Back to Collection</a>
+        <h1>{{ title }}</h1>
+        <p class="product-era">{{ era }}</p>
+        <div class="accent-line"></div>
+        <p class="product-description">{{ description }}</p>
+        {% if details %}
+        <p class="product-description">{{ details }}</p>
+        {% endif %}
+        <dl class="product-specs">
+          <dt>Dimensions</dt>
+          <dd>{{ dimensions }}</dd>
+          <dt>Material</dt>
+          <dd>{{ material }}</dd>
+          <dt>Condition</dt>
+          <dd>{{ condition }}</dd>
+        </dl>
+        <a href="/contact.html" class="btn">Enquire About This Piece</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="/images/logo-circle.png" alt="Act II Antiques" class="footer-logo">
+      <p>&copy; 2026 Act II Antiques</p>
+    </div>
+  </footer>
+</body>
+</html>
