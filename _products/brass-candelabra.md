@@ -5,7 +5,7 @@ material: Solid brass with original patina
 layout: product.njk
 permalink: /products/brass-candelabra.html
 title: Brass Candelabra
-order: 4
+order: 3
 era: Circa 1850
 image: /images/gallery-5.jpg
 description: A magnificent pair of Victorian brass candelabra, each holding five
