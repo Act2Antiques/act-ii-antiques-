@@ -11,10 +11,7 @@ collections:
     folder: "_products"
     create: true
     slug: "{{slug}}"
-    sortable_fields:
-      fields: ["order", "title"]
-      default:
-        field: "order"
+    sortable_fields: ["order", "title"]
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Order", name: "order", widget: "number", default: 10 }
