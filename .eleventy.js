@@ -7,7 +7,9 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("contact.html");                                            
                                                                                                   
     eleventyConfig.addCollection("products", function(collectionApi) {                            
-      return collectionApi.getFilteredByGlob("_products/*.md");                                   
+      return collectionApi.getFilteredByGlob("_products/*.md").sort((a, b) => {                   
+        return (a.data.order || 10) - (b.data.order || 10);                                       
+      });                                                                                         
     });                                                                                           
                                                                                                   
     return {                                                                                      
