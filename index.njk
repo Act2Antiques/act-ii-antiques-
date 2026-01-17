@@ -42,6 +42,7 @@ permalink: /index.html
       <div class="gallery-grid">
         {%- for product in collections.products -%}
         <a href="{{ product.url }}" class="gallery-item">
+          {% if product.data.sold %}<span class="sold-banner">Sold</span>{% endif %}            
           <img src="{{ product.data.image }}" alt="{{ product.data.title }}">
           <div class="overlay">
             <h3>{{ product.data.title }}</h3>
