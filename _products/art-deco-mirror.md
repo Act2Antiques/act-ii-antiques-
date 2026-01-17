@@ -7,7 +7,7 @@ description: A stunning Art Deco wall mirror featuring geometric patterns and be
 details: This exceptional piece captures the glamour and sophistication of the 1920s, with its bold angular forms and luxurious detailing making it a perfect statement piece.
 dimensions: 'W: 80cm  H: 120cm  D: 5cm'
 material: Gilt wood frame with bevelled glass
-condition: Very good, minor wear consistent with age
+condition: Good vintage condition with minor surface marks consistent with age and use
 price: £150
 sold: false
 layout: product.njk
