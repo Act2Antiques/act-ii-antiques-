@@ -1,5 +1,5 @@
 ---
-title: Art Deco Mirror
+title: Oak Gateleg Side Table
 order: 1
 era: Circa 1925
 image: /images/Holding image 5.jpeg
@@ -8,8 +8,8 @@ details: This exceptional piece captures the glamour and sophistication of the 1
 dimensions: 'W: 80cm  H: 120cm  D: 5cm'
 material: Gilt wood frame with bevelled glass
 condition: Very good, minor wear consistent with age
-price: £220
-sold: true
+price: £150
+sold: false
 layout: product.njk
 permalink: /products/art-deco-mirror.html
 ---
