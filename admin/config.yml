@@ -1,9 +1,7 @@
 backend:                                                                                        
   name: github                                                                                  
   repo: Act2Antiques/act-ii-antiques-                                                           
-  branch: main                                                                                  
-  base_url: https://decap-oauth.netlify.app                                                     
-  auth_endpoint: /api/begin-auth
+  branch: main
 
 media_folder: "images"
 public_folder: "/images"
