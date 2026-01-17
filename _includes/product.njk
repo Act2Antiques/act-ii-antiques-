@@ -38,6 +38,7 @@
         <a href="/index.html" class="back-link">Back to Collection</a>
         <h1>{{ title }}</h1>
         <p class="product-era">{{ era }}</p>
+        {% if sold %}<p class="product-sold">SOLD</p>{% endif %}
         <div class="accent-line"></div>
         <p class="product-description">{{ description }}</p>
         {% if details %}
