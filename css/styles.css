@@ -1,0 +1,762 @@
+/* Act II Antiques - Clean & Modern */
+:root {
+  --neutral: #ffffff;
+  --red: #c03a2a;
+  --mustard: #f5d03e;
+  --charcoal: #4a4543;
+  --grey-light: #f5f5f5;
+  --grey-border: #e5e5e5;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--neutral);
+  color: var(--charcoal);
+  line-height: 1.7;
+  font-size: 15px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2.8rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: rgba(74, 69, 67, 0.85);
+}
+
+/* Decorative Elements */
+.accent-line {
+  width: 50px;
+  height: 2px;
+  background-color: var(--mustard);
+  margin: 1.25rem 0;
+}
+
+/* Header & Navigation */
+header {
+  padding: 1.5rem 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--neutral);
+  border-bottom: 1px solid var(--grey-border);
+}
+
+nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+/* Animated Dog */
+.logo-dog {
+  position: relative;
+  display: block;
+  width: 85px;
+  height: 85px;
+  opacity: 1;
+}
+
+.home .logo-dog {
+  opacity: 0;
+  animation: slideInFromLeft 1.5s ease-out forwards;
+}
+
+.dog-body,
+.dog-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dog-body {
+  z-index: 1;
+}
+
+.dog-head {
+  z-index: 2;
+  transform-origin: 58% 75%;
+}
+
+.home .dog-head {
+  animation: nod 0.6s ease-in-out 2s forwards;
+}
+
+.monocle-glint {
+  position: absolute;
+  top: calc(33% + 1px);
+  left: calc(47% + 5px);
+  width: 8px;
+  height: 4px;
+  background-color: #fff;
+  border-bottom: 1.5px solid var(--charcoal);
+  border-radius: 0 0 50% 50%;
+  opacity: 0;
+  pointer-events: none;
+  transform: rotate(-5deg);
+}
+
+.home .monocle-glint {
+  animation: wink 0.3s ease-in-out 2.8s forwards;
+}
+
+/* Logo Text */
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.logo-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--red);
+}
+
+.logo-title em {
+  font-style: italic;
+}
+
+.logo-subtitle {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--charcoal);
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  text-align: right;
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes nod {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+}
+
+@keyframes wink {
+  0%, 100% {
+    opacity: 0;
+  }
+  30%, 70% {
+    opacity: 1;
+  }
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-links a {
+  color: var(--charcoal);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--charcoal);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--charcoal);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--charcoal);
+  color: var(--neutral);
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: 1px solid var(--charcoal);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--charcoal);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--charcoal);
+  color: var(--charcoal);
+}
+
+.btn-outline:hover {
+  background-color: var(--charcoal);
+  color: var(--neutral);
+}
+
+/* Main Content */
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 5rem 3rem 6rem;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 7rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header h2 {
+  color: var(--charcoal);
+  margin-bottom: 0.25rem;
+}
+
+.section-header p {
+  font-size: 0.95rem;
+  color: rgba(74, 69, 67, 0.6);
+}
+
+.section-header .accent-line {
+  margin: 1rem auto;
+}
+
+/* Hero Banner */
+.hero-banner {
+  background-color: var(--red);
+  color: var(--neutral);
+  padding: 4rem;
+  text-align: center;
+  margin: -5rem -3rem 5rem -3rem;
+  position: relative;
+}
+
+.hero-banner h1 {
+  font-size: 3.5rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.hero-banner p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Featured Grid */
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.featured-item {
+  background-color: var(--neutral);
+  overflow: hidden;
+}
+
+.featured-item img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background-color: var(--grey-light);
+  transition: opacity 0.3s ease;
+}
+
+.featured-item:hover img {
+  opacity: 0.9;
+}
+
+.featured-item .item-info {
+  padding: 1.25rem 0;
+}
+
+.featured-item h3 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.featured-item .era {
+  color: rgba(74, 69, 67, 0.6);
+  font-size: 0.85rem;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+a.gallery-item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1;
+  background-color: var(--grey-light);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.03);
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.gallery-item .overlay h3 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.gallery-item .overlay p {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* About Section */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+
+.about-text p {
+  margin-bottom: 1.25rem;
+  color: rgba(74, 69, 67, 0.75);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.about-text .btn {
+  margin-top: 1.5rem;
+}
+
+.about-image img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  background-color: var(--grey-light);
+}
+
+/* Promise Section */
+.promise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.promise-item h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.promise-item p {
+  color: rgba(74, 69, 67, 0.65);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Contact Section - Centered */
+.contact-centered {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--grey-border);
+  font-family: inherit;
+  font-size: 0.95rem;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--charcoal);
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(74, 69, 67, 0.4);
+}
+
+.contact-form .btn {
+  width: 100%;
+  text-align: center;
+}
+
+.contact-note {
+  margin: 0.5rem 0 0 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(74, 69, 67, 0.6);
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  background-color: var(--grey-light);
+  color: var(--charcoal);
+  padding: 3rem;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+footer p {
+  opacity: 0.5;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+}
+
+/* Product Page */
+.product-page {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.product-image img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background-color: var(--grey-light);
+}
+
+.product-details {
+  padding-top: 1rem;
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(74, 69, 67, 0.6);
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--charcoal);
+}
+
+.back-link::before {
+  content: '← ';
+}
+
+.product-details h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 0.25rem;
+}
+
+.product-era {
+  font-size: 1rem;
+  color: rgba(74, 69, 67, 0.6);
+  margin-bottom: 0.5rem;
+}
+
+.product-details .accent-line {
+  margin: 1.5rem 0;
+}
+
+.product-description {
+  color: rgba(74, 69, 67, 0.8);
+  margin-bottom: 1.25rem;
+  line-height: 1.8;
+}
+
+.product-specs {
+  margin: 2rem 0;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--grey-border);
+  border-bottom: 1px solid var(--grey-border);
+}
+
+.product-specs dt {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--charcoal);
+  margin-bottom: 0.25rem;
+}
+
+.product-specs dd {
+  color: rgba(74, 69, 67, 0.7);
+  margin-bottom: 1.25rem;
+  margin-left: 0;
+}
+
+.product-specs dd:last-child {
+  margin-bottom: 0;
+}
+
+.product-details .btn {
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .gallery-grid,
+  .featured-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .promise-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 1.25rem 2rem;
+  }
+
+  .logo-dog {
+    width: 65px;
+    height: 65px;
+  }
+
+  .logo-title {
+    font-size: 1.9rem;
+  }
+
+  .logo-subtitle {
+    font-size: 0.6rem;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+  }
+
+  .nav-links a {
+    font-size: 0.75rem;
+  }
+
+  main {
+    padding: 3rem 2rem 4rem;
+  }
+
+  section {
+    margin-bottom: 5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .about-content,
+  .contact-content,
+  .product-page {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .product-details h1 {
+    font-size: 2rem;
+  }
+
+  footer {
+    padding: 2.5rem 2rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 540px) {
+  header {
+    padding: 1rem 1.5rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .logo-dog {
+    width: 55px;
+    height: 55px;
+  }
+
+  .logo-title {
+    font-size: 1.6rem;
+  }
+
+  .logo-subtitle {
+    font-size: 0.55rem;
+  }
+
+  .nav-links {
+    gap: 1.25rem;
+  }
+
+  .nav-links a {
+    font-size: 0.7rem;
+  }
+
+  main {
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .gallery-grid,
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .gallery-item .overlay {
+    opacity: 1;
+  }
+
+  .footer-logo {
+    width: 45px;
+  }
+}

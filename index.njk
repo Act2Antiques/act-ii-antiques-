@@ -1,0 +1,89 @@
+---
+permalink: /index.html
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Act II Antiques | Curated Vintage Treasures</title>
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="home">
+  <header>
+    <nav>
+      <a href="/index.html" class="logo">
+        <span class="logo-dog">
+          <img src="/images/dog-body.svg" alt="" class="dog-body">
+          <img src="/images/dog-head.svg" alt="" class="dog-head">
+          <span class="monocle-glint"></span>
+        </span>
+        <span class="logo-text">
+          <span class="logo-title"><em>Act</em> II</span>
+          <span class="logo-subtitle">Antiques</span>
+        </span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/index.html" class="active">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="section-header">
+        <h2>Our Collection</h2>
+        <div class="accent-line"></div>
+      </div>
+      <div class="gallery-grid">
+        {%- for product in collections.products -%}
+        <a href="{{ product.url }}" class="gallery-item">
+          <img src="{{ product.data.image }}" alt="{{ product.data.title }}">
+          <div class="overlay">
+            <h3>{{ product.data.title }}</h3>
+            <p>{{ product.data.era }}</p>
+          </div>
+        </a>
+        {%- endfor -%}
+      </div>
+    </section>
+
+    <section>
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Every Piece Deserves a Second Act</h2>
+          <div class="accent-line"></div>
+          <p>Our carefully curated collection spans centuries of craftsmanship, from elegant Georgian silverware to charming Victorian furniture.</p>
+          <p>With decades of experience in the antiques trade, we source only the finest pieces and ensure authenticity with every purchase.</p>
+          <a href="/about.html" class="btn btn-outline">Our Story</a>
+        </div>
+        <div class="about-image">
+          <img src="/images/shop.jpg" alt="Inside Act II Antiques">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="/images/logo-circle.png" alt="Act II Antiques" class="footer-logo">
+      <p>&copy; 2026 Act II Antiques</p>
+    </div>
+  </footer>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

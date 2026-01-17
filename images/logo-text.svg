@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 70">
+  <style>
+    @font-face {
+      font-family: 'Cormorant Garamond';
+      src: url('../fonts/cormorant-regular-500.ttf') format('truetype');
+      font-weight: 500;
+    }
+    @font-face {
+      font-family: 'Cormorant Garamond';
+      src: url('../fonts/cormorant-italic-500.ttf') format('truetype');
+      font-weight: 500;
+      font-style: italic;
+    }
+    .title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 36px;
+      font-weight: 500;
+      fill: #c03a2a;
+    }
+    .title-italic {
+      font-style: italic;
+    }
+    .subtitle {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 16px;
+      font-weight: 500;
+      fill: #4a4543;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+  </style>
+  <text x="0" y="36" class="title">
+    <tspan class="title-italic">Act</tspan><tspan> II</tspan>
+  </text>
+  <text x="0" y="58" class="subtitle">ANTIQUES</text>
+</svg>
