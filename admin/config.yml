@@ -22,7 +22,8 @@ collections:
       - { label: "Additional Details", name: "details", widget: "text", required: false }
       - { label: "Dimensions", name: "dimensions", widget: "string" }
       - { label: "Material", name: "material", widget: "string" }
-      - { label: "Condition", name: "condition", widget: "string" }
+      - { label: "Condition", name: "condition", widget: "string" }                             
+      - { label: "Price", name: "price", widget: "string" }
 
   - name: "pages"
     label: "Pages"
