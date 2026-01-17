@@ -1,5 +1,6 @@
-backend:
-  name: git-gateway
+backend:                                                                                        
+  name: github                                                                                  
+  repo: Act2Antiques/act-ii-antiques-                                                           
   branch: main
 
 media_folder: "images"
