@@ -1,6 +1,6 @@
 ---
 title: Ercol Chairs
-order: 1
+order: 5
 era: "1900"
 image: /images/Ercol Chairs.jpeg
 description: "I love these chairs! "
