@@ -8,5 +8,6 @@ details: They are very nice
 dimensions: 1m x 2m
 material: Wood
 condition: The best ever
+price: £225
 ---
 
