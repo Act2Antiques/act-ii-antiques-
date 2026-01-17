@@ -9,6 +9,7 @@ dimensions: 'W: 80cm  H: 120cm  D: 5cm'
 material: Gilt wood frame with bevelled glass
 condition: Very good, minor wear consistent with age
 price: £220
+sold: true
 layout: product.njk
 permalink: /products/art-deco-mirror.html
 ---
