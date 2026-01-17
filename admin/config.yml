@@ -13,6 +13,8 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Order", name: "order", widget: "number", default: 10, hint: "Lower numbers appear
+   first" }
       - { label: "Era", name: "era", widget: "string", hint: "e.g. Circa 1880" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Description", name: "description", widget: "text" }
