@@ -8,7 +8,7 @@ details: These substantial pieces would have graced the dining table of a grand 
 dimensions: 'H: 55cm  W: 40cm (each)'
 material: Solid brass with original patina
 condition: Very good, sold as a pair
-price: '310'
+price: '365'
 layout: product.njk
 permalink: /products/brass-candelabra.html
 ---
