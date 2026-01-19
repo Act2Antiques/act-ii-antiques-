@@ -33,24 +33,24 @@ collections:
         name: "homepage"
         file: "_content/homepage.md"
         fields:
-          - { label: "Collection Heading", name: "collection_heading", widget: "string" }
-          - { label: "About Heading", name: "about_heading", widget: "string" }
-          - { label: "About Paragraph 1", name: "about_text_1", widget: "text" }
-          - { label: "About Paragraph 2", name: "about_text_2", widget: "text" }
-          - { label: "About Button Text", name: "about_button", widget: "string" }
-          - { label: "About Image", name: "about_image", widget: "image" }
+          - { label: "Collection Heading", name: "collection_heading", widget: "string", required: false }
+          - { label: "About Heading", name: "about_heading", widget: "string", required: false }
+          - { label: "About Paragraph 1", name: "about_text_1", widget: "text", required: false }
+          - { label: "About Paragraph 2", name: "about_text_2", widget: "text", required: false }
+          - { label: "About Button Text", name: "about_button", widget: "string", required: false }
+          - { label: "About Image", name: "about_image", widget: "image", required: false }
       - label: "About Page"
         name: "about"
         file: "_content/about.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Paragraph 1", name: "paragraph_1", widget: "text" }
-          - { label: "Paragraph 2", name: "paragraph_2", widget: "text" }
-          - { label: "Paragraph 3", name: "paragraph_3", widget: "text" }
-          - { label: "About Image", name: "about_image", widget: "image" }
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Paragraph 1", name: "paragraph_1", widget: "text", required: false }
+          - { label: "Paragraph 2", name: "paragraph_2", widget: "text", required: false }
+          - { label: "Paragraph 3", name: "paragraph_3", widget: "text", required: false }
+          - { label: "About Image", name: "about_image", widget: "image", required: false }
       - label: "Contact Page"
         name: "contact"
         file: "_content/contact.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Contact Note", name: "contact_note", widget: "text" }
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Contact Note", name: "contact_note", widget: "text", required: false }
