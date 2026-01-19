@@ -1,6 +1,6 @@
 ---
 title: Captains Chair
-order: 1
+order: 2
 era: 20th Century
 image: /images/Captains Chair 1.jpg
 description: |-
