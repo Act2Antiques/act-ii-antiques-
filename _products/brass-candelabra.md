@@ -1,6 +1,6 @@
 ---
 title: Oval burr walnut framed wall hanging mirror
-order: 3
+order: 5
 era: Circa 1850
 image: /images/Holding image 6.jpeg
 description: An absolutely beautiful oval burr walnut frame wall hanging mirror with inlaid paterae decoration.
