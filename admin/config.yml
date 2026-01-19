@@ -1,6 +1,6 @@
-backend:                                                                                        
-  name: github                                                                                  
-  repo: Act2Antiques/act-ii-antiques-                                                           
+backend:
+  name: github
+  repo: Act2Antiques/act-ii-antiques-
   branch: main
 
 media_folder: "images"
@@ -22,7 +22,7 @@ collections:
       - { label: "Additional Details", name: "details", widget: "text", required: false }
       - { label: "Dimensions", name: "dimensions", widget: "string" }
       - { label: "Material", name: "material", widget: "string" }
-      - { label: "Condition", name: "condition", widget: "string" }                             
+      - { label: "Condition", name: "condition", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
       - { label: "Sold", name: "sold", widget: "boolean", default: false }
 
@@ -33,8 +33,8 @@ collections:
         name: "homepage"
         file: "_content/homepage.md"
         fields:
-          - { label: "Collection Heading", name: "collection_heading", widget: "string", hint: "The heading above the product gallery" }
-          - { label: "About Heading", name: "about_heading", widget: "string", hint: "The heading in the about section" }
+          - { label: "Collection Heading", name: "collection_heading", widget: "string" }
+          - { label: "About Heading", name: "about_heading", widget: "string" }
           - { label: "About Paragraph 1", name: "about_text_1", widget: "text" }
           - { label: "About Paragraph 2", name: "about_text_2", widget: "text" }
           - { label: "About Button Text", name: "about_button", widget: "string" }
@@ -53,4 +53,4 @@ collections:
         file: "_content/contact.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Contact Note", name: "contact_note", widget: "text", hint: "The text below the heading" }
+          - { label: "Contact Note", name: "contact_note", widget: "text" }
