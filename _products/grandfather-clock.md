@@ -1,6 +1,6 @@
 ---
 title: Dark Ercol Corner Cupboard
-order: 2
+order: 3
 era: 20th Century
 image: /images/Ercol Bookcase 1.jpg
 description: A fine Regency longcase clock with eight-day movement and painted dial. The elegant mahogany case features crossbanded decoration and original brass finials.
