@@ -17,7 +17,14 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Order", name: "order", widget: "number", default: 10 }
       - { label: "Era", name: "era", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Main Image", name: "image", widget: "image", hint: "Primary image shown on homepage" }
+      - label: "Gallery Images"
+        name: "gallery"
+        widget: "list"
+        required: false
+        hint: "Additional images for the product page carousel"
+        max: 10
+        field: { label: "Image", name: "image", widget: "image" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Additional Details", name: "details", widget: "text", required: false }
       - { label: "Dimensions", name: "dimensions", widget: "string" }

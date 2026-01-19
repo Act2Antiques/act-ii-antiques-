@@ -31,8 +31,24 @@
 
   <main>
     <div class="product-page">
-      <div class="product-image">
-        <img src="{{ image }}" alt="{{ title }}">
+      <div class="product-gallery">
+        <div class="gallery-main">
+          <img src="{{ image }}" alt="{{ title }}" id="mainImage" onclick="openLightbox(this.src)">
+        </div>
+        {% if gallery and gallery.length > 0 %}
+        <div class="gallery-thumbs">
+          <img src="{{ image }}" alt="{{ title }}" class="active" onclick="setMainImage(this)">
+          {% for item in gallery %}
+          <img src="{{ item.image }}" alt="{{ title }}" onclick="setMainImage(this)">
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightboxImg">
       </div>
       <div class="product-details">
         <a href="/index.html" class="back-link">Back to Collection</a>
@@ -65,5 +81,20 @@
       <p>&copy; 2026 Act II Antiques</p>
     </div>
   </footer>
+
+  <script>
+    function setMainImage(thumb) {
+      document.getElementById('mainImage').src = thumb.src;
+      document.querySelectorAll('.gallery-thumbs img').forEach(img => img.classList.remove('active'));
+      thumb.classList.add('active');
+    }
+    function openLightbox(src) {
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('lightbox').classList.add('active');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+  </script>
 </body>
 </html>
