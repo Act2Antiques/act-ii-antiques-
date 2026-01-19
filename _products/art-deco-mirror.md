@@ -1,8 +1,8 @@
 ---
-title: Oak Gateleg Side Table
+title: Captains Chair
 order: 1
 era: 20th Century
-image: /images/Holding image 5.jpeg
+image: /images/Captains Chair 1.jpg
 description: |-
   An oak gateleg side table on bobbin turned supports.
 
