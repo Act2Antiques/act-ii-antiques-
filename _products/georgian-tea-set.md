@@ -1,8 +1,8 @@
 ---
-title: 19th Century Mahogany Chest of Drawers
+title: Test Chair
 order: 4
 era: 19th Century
-image: /images/Holding image 3.jpeg
+image: /images/Test chair.jpg
 description: An exquisite three-piece Georgian silver tea set comprising teapot, sugar bowl, and cream jug. Each piece bears clear hallmarks and features elegant engraved decoration.
 details: This complete service exemplifies the refined taste of the Regency period, with its graceful proportions and delicate bright-cut engraving throughout.
 dimensions: Teapot, sugar bowl, cream jug
