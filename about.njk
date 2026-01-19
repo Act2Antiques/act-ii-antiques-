@@ -1,0 +1,59 @@
+---
+permalink: /about.html
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Act II Antiques</title>
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/index.html" class="logo">
+        <span class="logo-dog">
+          <img src="/images/dog-body.svg" alt="" class="dog-body">
+          <img src="/images/dog-head.svg" alt="" class="dog-head">
+          <span class="monocle-glint"></span>
+        </span>
+        <span class="logo-text">
+          <span class="logo-title"><em>Act</em> II</span>
+          <span class="logo-subtitle">Antiques</span>
+        </span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html" class="active">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="about-content">
+        <div class="about-text">
+          <h2>{{ pages.about.title }}</h2>
+          <div class="accent-line"></div>
+          <p>{{ pages.about.paragraph_1 }}</p>
+          <p>{{ pages.about.paragraph_2 }}</p>
+          <p>{{ pages.about.paragraph_3 }}</p>
+        </div>
+        <div class="about-image">
+          <img src="{{ pages.about.about_image }}" alt="Act II Antiques">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="/images/logo-circle.png" alt="Act II Antiques" class="footer-logo">
+      <p>&copy; 2026 Act II Antiques</p>
+    </div>
+  </footer>
+</body>
+</html>

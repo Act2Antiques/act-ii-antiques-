@@ -29,11 +29,28 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
+      - label: "Homepage"
+        name: "homepage"
+        file: "_content/homepage.md"
+        fields:
+          - { label: "Collection Heading", name: "collection_heading", widget: "string", hint: "The heading above the product gallery" }
+          - { label: "About Heading", name: "about_heading", widget: "string", hint: "The heading in the about section" }
+          - { label: "About Paragraph 1", name: "about_text_1", widget: "text" }
+          - { label: "About Paragraph 2", name: "about_text_2", widget: "text" }
+          - { label: "About Button Text", name: "about_button", widget: "string" }
+          - { label: "About Image", name: "about_image", widget: "image" }
       - label: "About Page"
         name: "about"
         file: "_content/about.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Intro", name: "intro", widget: "text" }
-          - { label: "Story Title", name: "story_title", widget: "string" }
-          - { label: "Story Text", name: "story", widget: "text" }
+          - { label: "Paragraph 1", name: "paragraph_1", widget: "text" }
+          - { label: "Paragraph 2", name: "paragraph_2", widget: "text" }
+          - { label: "Paragraph 3", name: "paragraph_3", widget: "text" }
+          - { label: "About Image", name: "about_image", widget: "image" }
+      - label: "Contact Page"
+        name: "contact"
+        file: "_content/contact.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Contact Note", name: "contact_note", widget: "text", hint: "The text below the heading" }

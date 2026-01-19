@@ -1,19 +1,22 @@
+---
+permalink: /contact.html
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Act II Antiques</title>
-  <link rel="stylesheet" href="fonts/fonts.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
   <header>
     <nav>
-      <a href="index.html" class="logo">
+      <a href="/index.html" class="logo">
         <span class="logo-dog">
-          <img src="images/dog-body.svg" alt="" class="dog-body">
-          <img src="images/dog-head.svg" alt="" class="dog-head">
+          <img src="/images/dog-body.svg" alt="" class="dog-body">
+          <img src="/images/dog-head.svg" alt="" class="dog-head">
           <span class="monocle-glint"></span>
         </span>
         <span class="logo-text">
@@ -22,9 +25,9 @@
         </span>
       </a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -32,9 +35,9 @@
   <main>
     <section>
       <div class="section-header">
-        <h2>Get in Touch</h2>
+        <h2>{{ pages.contact.title }}</h2>
         <div class="accent-line"></div>
-        <p class="contact-note">Viewings by appointment only. Get in touch to book or enquire about an item.</p>
+        <p class="contact-note">{{ pages.contact.contact_note }}</p>
       </div>
 
       <div class="contact-centered">
@@ -56,7 +59,7 @@
 
   <footer>
     <div class="footer-content">
-      <img src="images/logo-circle.png" alt="Act II Antiques" class="footer-logo">
+      <img src="/images/logo-circle.png" alt="Act II Antiques" class="footer-logo">
       <p>&copy; 2026 Act II Antiques</p>
     </div>
   </footer>

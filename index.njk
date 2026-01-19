@@ -1,3 +1,6 @@
+---
+permalink: /index.html
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +36,7 @@
   <main>
     <section>
       <div class="section-header">
-        <h2>Our Collection</h2>
+        <h2>{{ pages.homepage.collection_heading }}</h2>
         <div class="accent-line"></div>
       </div>
       <div class="gallery-grid">
@@ -53,13 +56,14 @@
     <section>
       <div class="about-content">
         <div class="about-text">
-          <h2>Every Piece Deserves a Second Act</h2>
+          <h2>{{ pages.homepage.about_heading }}</h2>
           <div class="accent-line"></div>
-          <p>Our carefully curated collection spans centuries of craftsmanship, from charming Victorian furniture to mid century classics.</p>
-          <a href="/about.html" class="btn btn-outline">Our Story</a>
+          <p>{{ pages.homepage.about_text_1 }}</p>
+          <p>{{ pages.homepage.about_text_2 }}</p>
+          <a href="/about.html" class="btn btn-outline">{{ pages.homepage.about_button }}</a>
         </div>
         <div class="about-image">
-          <img src="/images/shop.jpg" alt="Inside Act II Antiques">
+          <img src="{{ pages.homepage.about_image }}" alt="Inside Act II Antiques">
         </div>
       </div>
     </section>
