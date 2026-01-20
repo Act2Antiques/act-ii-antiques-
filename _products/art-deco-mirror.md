@@ -13,7 +13,7 @@ details: |-
   The table is solid, stable and perfect for smaller spaces.</p>
 dimensions: 'W: 80cm  H: 120cm  D: 5cm'
 material: Oak
-condition: Good vintage condition with minor surface marks consistent with age and use, but no major scratches or dents.
+condition: Good vintage condition with minor surface marks consistent with age and use
 price: £150
 sold: false
 layout: product.njk
