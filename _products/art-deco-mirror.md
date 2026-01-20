@@ -9,8 +9,8 @@ description: |-
   Made from solid oak.
 details: |-
   The table features two folding leaves that open out to provide a generous dining space and fold down for compact storage. Ideal for smaller rooms, apartments, or as an occasional table.
-  <p>
-  The table is solid, stable and perfect for smaller spaces.</p>
+
+  The table is solid, stable and perfect for smaller spaces.
 dimensions: 'W: 80cm  H: 120cm  D: 5cm'
 material: Oak
 condition: Good vintage condition with minor surface marks consistent with age and use
