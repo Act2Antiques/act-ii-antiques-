@@ -2,7 +2,7 @@
 title: Ercol Corner Bookcase
 order: 2
 era: '-'
-image: /images/Ercol Bookcase 1-1.jpg
+image: /images/Ercol Bookcase Main.jpg
 gallery:
   - /images/Ercol Bookcase 2.jpg
   - /images/Ercol Bookcase 3.jpg
