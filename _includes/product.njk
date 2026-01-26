@@ -39,7 +39,7 @@
         <div class="gallery-thumbs">
           <img src="{{ image | encodeUri }}" alt="{{ title }}" class="active" onclick="setMainImage(this)">
           {% for item in gallery %}
-          <img src="{{ item.image | encodeUri }}" alt="{{ title }}" onclick="setMainImage(this)">
+          <img src="{{ item | encodeUri }}" alt="{{ title }}" onclick="setMainImage(this)">
           {% endfor %}
         </div>
         {% endif %}
