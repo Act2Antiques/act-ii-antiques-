@@ -43,7 +43,7 @@ permalink: /index.html
         {%- for product in collections.products -%}
         <a href="{{ product.url }}" class="gallery-item">
           {% if product.data.sold %}<span class="sold-banner">Sold</span>{% endif %}            
-          <img src="{{ product.data.image }}" alt="{{ product.data.title }}">
+          <img src="{{ product.data.image | encodeUri }}" alt="{{ product.data.title }}">
           <div class="overlay">
             <h3>{{ product.data.title }}</h3>
             <p>{{ product.data.era }}</p>
@@ -63,7 +63,7 @@ permalink: /index.html
           <a href="/about.html" class="btn btn-outline">{{ pages.homepage.about_button }}</a>
         </div>
         <div class="about-image">
-          <img src="{{ pages.homepage.about_image }}" alt="Inside Act II Antiques">
+          <img src="{{ pages.homepage.about_image | encodeUri }}" alt="Inside Act II Antiques">
         </div>
       </div>
     </section>

@@ -33,13 +33,13 @@
     <div class="product-page">
       <div class="product-gallery">
         <div class="gallery-main">
-          <img src="{{ image }}" alt="{{ title }}" id="mainImage" onclick="openLightbox(this.src)">
+          <img src="{{ image | encodeUri }}" alt="{{ title }}" id="mainImage" onclick="openLightbox(this.src)">
         </div>
         {% if gallery and gallery.length > 0 %}
         <div class="gallery-thumbs">
-          <img src="{{ image }}" alt="{{ title }}" class="active" onclick="setMainImage(this)">
+          <img src="{{ image | encodeUri }}" alt="{{ title }}" class="active" onclick="setMainImage(this)">
           {% for item in gallery %}
-          <img src="{{ item.image }}" alt="{{ title }}" onclick="setMainImage(this)">
+          <img src="{{ item.image | encodeUri }}" alt="{{ title }}" onclick="setMainImage(this)">
           {% endfor %}
         </div>
         {% endif %}
