@@ -36,10 +36,11 @@
           <img src="{{ image | encodeUri }}" alt="{{ title }}" id="mainImage" onclick="openLightbox(this.src)">
         </div>
         {% if gallery and gallery.length > 0 %}
+        <!-- DEBUG: gallery = {{ gallery | dump | safe }} -->
         <div class="gallery-thumbs">
           <img src="{{ image | encodeUri }}" alt="{{ title }}" class="active" onclick="setMainImage(this)">
           {% for item in gallery %}
-          <img src="{{ item | encodeUri }}" alt="{{ title }}" onclick="setMainImage(this)">
+          <img src="{{ item | encodeUri }}" data-raw="{{ item }}" alt="{{ title }}" onclick="setMainImage(this)">
           {% endfor %}
         </div>
         {% endif %}

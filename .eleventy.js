@@ -6,7 +6,12 @@ module.exports = function(eleventyConfig) {
 
     // URL-encode image paths to handle spaces in filenames
     eleventyConfig.addFilter("encodeUri", function(uri) {
-      return uri ? encodeURI(uri) : uri;
+      if (!uri) return '';
+      // Handle if uri is an object with image property
+      if (typeof uri === 'object' && uri.image) {
+        return encodeURI(uri.image);
+      }
+      return encodeURI(String(uri));
     });
 
     eleventyConfig.addCollection("products", function(collectionApi) {                            
