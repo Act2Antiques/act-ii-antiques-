@@ -2,9 +2,9 @@
 title: Side Table
 order: 3
 era: '-'
-image: /images/Side Table 1.jpg
+image: /images/Side Table Main Image.jpg
 gallery:
-  - /images/Side_Table_2.jpg
+  - /images/Side Table 1.jpg
 description: '-'
 details: ''
 dimensions: '-'
