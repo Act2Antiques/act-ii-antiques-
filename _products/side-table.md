@@ -16,6 +16,6 @@ details: |-
 dimensions: 33cm x 61cm x 75cm / 90cm x 61cm x 75cm (fully expanded)
 material: Solid Oak
 condition: Good vintage condition with minor surface marks consistent with age and use
-price: '180'
+price: £180
 sold: false
 ---
