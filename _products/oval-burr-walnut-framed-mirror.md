@@ -1,6 +1,6 @@
 ---
 title: Oval Burr Walnut Framed Mirror
-order: 10
+order: 4
 era: Early 20th Century (est)
 image: /images/Oval Burr Walnut Mirror_01.jpg
 gallery: []
