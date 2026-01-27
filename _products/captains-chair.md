@@ -14,6 +14,6 @@ details: Strengthening rods added to arms, restored backrest.
 dimensions: 'H: 83.5cm	 W: 70cm 	D: 63cm'
 material: Ash & Elm
 condition: Great vintage condition with minor surface marks consistent with age and use
-price: '450'
+price: £450
 sold: false
 ---
