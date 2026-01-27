@@ -1,5 +1,5 @@
 ---
-title: Wheelback Windsor Spindle Dining Chairs
+title: Vintage Romanian Wheelback Windsor Dining Chairs (Set of 4)
 order: 5
 era: 20th Century (circa 1970s)
 image: /images/Wheelback_Group_01.jpg
