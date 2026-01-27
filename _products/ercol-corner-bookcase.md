@@ -15,7 +15,7 @@ details: |-
   A dark rich old colonial finish (dark, chocolatey brown).
 
   Manufactured at the Ercol factory in High Wycombe, England in 1978, this piece features the authentic Ercol gold lion logo.
-dimensions: '-'
+dimensions: 'H: 183.5cm  D: 42cm (front to back) / 53cm (along each side)   W: 75 cm'
 material: Solid Elm
 condition: Good condition with minor surface marks consistent with age and use
 price: '220'
