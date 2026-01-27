@@ -18,6 +18,6 @@ details: |-
 dimensions: 'H: 183.5cm  D: 42cm (front to back) / 53cm (along each side)   W: 75 cm'
 material: Solid Elm
 condition: Good condition with minor surface marks consistent with age and use
-price: '220'
+price: £220
 sold: false
 ---
