@@ -1,6 +1,6 @@
 ---
 title: Wheelback Windsor Spindle Dining Chairs
-order: 10
+order: 5
 era: 20th Century (circa 1970s)
 image: /images/Wheelback_Group_01.jpg
 gallery:
