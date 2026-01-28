@@ -2,7 +2,7 @@
 title: Vintage Romanian Wheelback Windsor Dining Chairs (Set of 4)
 order: 5
 era: 20th Century (circa 1970s)
-image: /images/Wheelback_Group_01.jpg
+image: /images/Wheelback_Group_02.jpg
 gallery:
   - /images/Wheelback_Group_02.jpg
   - /images/Wheelback_Made in Romania.jpg
