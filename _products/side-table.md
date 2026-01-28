@@ -2,7 +2,7 @@
 title: Oak Gateleg Side Table
 order: 3
 era: Early 20th Century (est)
-image: /images/Side Table Main Image.jpg
+image: /images/Oak Gateleg_Main Pic 01.jpg
 gallery:
   - /images/Side Table 1.jpg
 description: An antique oak gateleg side table on bobbin turned supports.
