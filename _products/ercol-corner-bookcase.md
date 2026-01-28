@@ -10,7 +10,7 @@ gallery:
   - /images/Ercol Bookcase 5.jpg
   - /images/Ercol Bookcase 6.jpg
   - /images/Ercol Bookcase 7.jpg
-description: A lovely original dark wood Ercol corner bookcase/cabinet from Ercol Mural Old Colonial Range 1978 (model number 474). Freestanding, it features two fixed shelves and a bottom cupboard with fixed shelf.
+description: A lovely original dark wood Ercol corner bookcase/cabinet from the Ercol Mural Old Colonial Range 1978 (model number 474). Freestanding, it features two fixed shelves and a bottom cupboard with interior fixed shelf.
 details: |-
   A dark rich old colonial finish (dark, chocolatey brown).
 
