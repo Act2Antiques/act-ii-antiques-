@@ -1,10 +1,10 @@
 ---
-title: Oval Burr Walnut Framed Mirror
+title: Oval Burr Walnut Framed Wall Mirror
 order: 4
-era: Early 20th Century (est)
+era: Unknown
 image: /images/Oval Burr Walnut Mirror_01.jpg
 gallery: []
-description: An absolutely beautiful oval burr walnut frame wall hanging mirror with inlaid paterae decoration. In great condition.
+description: An absolutely beautiful oval burr walnut frame wall hanging mirror with inlaid paterae decoration. In good condition with minor cosmetic marks consistent with age.
 details: ''
 dimensions: 60cm x 92cm
 material: Burr walnut (frame)
